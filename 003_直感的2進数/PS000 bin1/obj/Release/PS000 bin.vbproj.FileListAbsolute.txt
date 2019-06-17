@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\PS000 bin\PS000 bin1\bin\Release\PS000 bin.exe.config
+C:\Users\user\source\repos\PS000 bin\PS000 bin1\bin\Release\PS000 bin.exe
+C:\Users\user\source\repos\PS000 bin\PS000 bin1\bin\Release\PS000 bin.pdb
+C:\Users\user\source\repos\PS000 bin\PS000 bin1\bin\Release\PS000 bin.xml
+C:\Users\user\source\repos\PS000 bin\PS000 bin1\obj\Release\PS000_bin.Form1.resources
+C:\Users\user\source\repos\PS000 bin\PS000 bin1\obj\Release\PS000_bin.Resources.resources
+C:\Users\user\source\repos\PS000 bin\PS000 bin1\obj\Release\PS000 bin.vbproj.GenerateResource.cache
+C:\Users\user\source\repos\PS000 bin\PS000 bin1\obj\Release\PS000 bin.vbproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\PS000 bin\PS000 bin1\obj\Release\PS000 bin.exe
+C:\Users\user\source\repos\PS000 bin\PS000 bin1\obj\Release\PS000 bin.xml
+C:\Users\user\source\repos\PS000 bin\PS000 bin1\obj\Release\PS000 bin.pdb
