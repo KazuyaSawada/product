@@ -1,6 +1,12 @@
 ﻿Public Class Form1
 
     Dim dec As Integer
+    Dim CorrectAnswerFlg As Boolean = False
+    Dim QuizFlg As Boolean = False
+    Dim CorrectAnswerCount As Integer = 0
+    Dim MyRandomObj As New Random
+    Dim R1 As Integer
+
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -36,6 +42,44 @@
         ElseIf (CheckBox1.Checked = False) Then
             Label2.BackColor = Color.FromArgb(&HF0, &HF0, &HF0)
             CheckBox1.Text = "隠"
+        End If
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+        QuizFlg = True
+        questionsMethod()
+
+    End Sub
+
+    Private Sub questionsMethod()
+
+        R1 = MyRandomObj.Next(256)
+
+        Dim questionsNumber1 As Integer '表示用変数
+        questionsNumber1 = CorrectAnswerCount + 1
+
+        MessageBox.Show("『" & R1 & "』" & "になるよう合わせてください。" & vbCrLf & vbCrLf & "現在のあなたの正解数は" & CorrectAnswerCount & "です。", questionsNumber1 & "問目クイズ！")
+
+    End Sub
+
+    Private Sub questionsJudgeMethod()
+
+        If (dec = R1) Then
+
+            CorrectAnswerCount += 1
+
+            Dim questionsNumber2 As Integer '表示用変数
+            questionsNumber2 = CorrectAnswerCount
+            MessageBox.Show("正解です。", questionsNumber2 & "問目クイズ！")
+
+            If (CorrectAnswerCount >= 3) Then
+                MessageBox.Show("素晴らしい！あなたは2進数を理解できています。", "おめでとう！")
+            End If
+
+            questionsMethod()
+
         End If
 
     End Sub
@@ -121,6 +165,12 @@
         End If
 
         Label2.Text = dec
+
+        If (QuizFlg = True) Then
+
+            questionsJudgeMethod()
+
+        End If
 
     End Sub
 
